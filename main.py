@@ -1,3 +1,4 @@
+# command 데코레이터 밑에 있는 함수명이 명령어
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -16,7 +17,11 @@ async def on_ready():
   print(f'Logged in as {bot.user}')
 
 @bot.command()
-async def hello(ctx):
+async def test(ctx):
   await ctx.send(f"hello {bot.user}")
+
+@bot.event
+async def setup_hook():
+  await bot.load_extension('cogs.timer')
 
 bot.run(TOKEN_KEY)
