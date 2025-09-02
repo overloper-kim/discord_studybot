@@ -21,7 +21,6 @@ async def test(interaction: Interaction):
     view.add_item(button)
     await interaction.response.send_message(view=view)
 
-
 @bot.tree.command(name="도움")
 async def tests(message):
     embed = discord.Embed(

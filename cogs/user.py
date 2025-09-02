@@ -1,19 +1,18 @@
-"""
-회원추가{username} 입력 시 유저 추가 기능 만들기
-"""
-
 import discord
 from discord.ext import commands
-import asyncio
+from discord import Interaction, app_commands
+
+intents = discord.Intents.default()
+intents.message_content = True
 
 class User(commands.Cog):
   def __init__(self, bot):
     self.bot = bot
 
-  @commands.command(name="사용자_추가")
-  async def user(self, ctx, user_name: str):
+  @app_commands.command(name="등록", description="사용자 이름을 입력하세요.")
+  async def user(self, interaction: Interaction, user_name: str):
     nickname = user_name
-    await ctx.send(f"{nickname}을(를) 추가하였습니다.");
+    await interaction.response.send_message(f"✅ {nickname} 님을 추가하였습니다.");
 
 async def setup(bot):
   await bot.add_cog(User(bot))
