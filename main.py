@@ -35,7 +35,7 @@ async def tests(message):
     embed.add_field(name="도움", value="해당 이 봇의 명령어 및 기능을 알려줍니다. (ex: /도움)", inline=False)
     embed.add_field(name="통계", value="요청 기준 일주일 동안 공부한 시간 등 통계하여 파일을 제공합니다. (ex: /통계)", inline=False)
     embed.add_field(name="메뉴", value="식사나 디저트 중 등록된 메뉴를 랜덤으로 추천합니다. (ex: /메뉴 식사)", inline=False)
-    embed.add_field(name="공부", value="공부 전용 타이머이며 학습 시간을 계산합니다. (ex: /공부)", inline=False)
+    embed.add_field(name="공부", value="공부 전용 타이머이며 학습 시간을 계산합니다. (ex: /공부 파이썬)", inline=False)
     embed.add_field(name="스트레칭", value="스트레칭 시간을 알람으로 알려줍니다.(기본 설정: 1시간) (ex: /스트레칭 60-시작)", inline=False)
     embed.add_field(name="설정", value="타이머 등 해당 봇을 설정할 수 있습니다. (ex: /설정)", inline=False)
     embed.set_footer(text="추가 기능은 카톡으로 문의 부탁드립니다.")
