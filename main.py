@@ -51,6 +51,7 @@ async def setup_hook():
     await bot.load_extension("cogs.timer")
     await bot.load_extension("cogs.user")
     await bot.load_extension("cogs.menu")
+    await bot.load_extension("cogs.study")
 
     guild =  discord.Object(id=BOT_CHANNEL)
     await bot.tree.sync(guild=guild)
