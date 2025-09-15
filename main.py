@@ -37,7 +37,6 @@ async def tests(message):
     embed.add_field(name="메뉴", value="식사나 디저트 중 등록된 메뉴를 랜덤으로 추천합니다. (ex: /메뉴 식사)", inline=False)
     embed.add_field(name="공부", value="공부 전용 타이머이며 학습 시간을 계산합니다. (ex: /공부 파이썬)", inline=False)
     embed.add_field(name="타이머", value="시간을 설정하여 알람으로 알려줍니다.(최소 설정 초(s)) (ex: /타이머 60)", inline=False)
-    embed.add_field(name="설정", value="타이머 등 해당 봇을 설정할 수 있습니다. (ex: /설정)", inline=False)
     embed.set_footer(text="추가 기능은 카톡으로 문의 부탁드립니다.")
     await message.channel.send(file=thumbnail, embed=embed)
 

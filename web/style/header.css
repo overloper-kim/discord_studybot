@@ -1,0 +1,9 @@
+header {
+  display: flex;
+  background-color: #ffd1d1;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+}
