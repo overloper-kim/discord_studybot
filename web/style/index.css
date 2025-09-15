@@ -8,31 +8,6 @@ html, body {
   height: 100vh;
 }
 
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.site-logo > div > h2 {
-  color: #FAA533;
-}
-
-.user-info {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.user-info > div {
-  padding: 0rem 1.5rem;
-}
-
-.user-info > div:first-child > p {
-  font-weight: bold;
-}
-
 main {
   display: flex;
   flex-direction: column;
